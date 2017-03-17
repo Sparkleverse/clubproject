@@ -1,0 +1,825 @@
+@font-face {
+    font-family: 'Distant Galaxy';
+    src: url('fonts/DISTGRG_-webfont.eot');
+    src: url('fonts/DISTGRG_-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DISTGRG_-webfont.woff') format('woff'),
+         url('fonts/DISTGRG_-webfont.ttf') format('truetype'),
+         url('fonts/DISTGRG_-webfont.svg#distant_galaxyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+table {
+    border-spacing: 0px;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+    
+}
+
+table tr td,
+p {
+    padding:5;
+    margin:0;
+}
+
+body {
+    margin:0px;
+    padding:0px;
+    font-family:arial;
+    background:#e6e6e6;
+}
+
+input[type=text],
+input[type="password"],
+textarea {
+    border:1px solid #bbbbbb;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.end_container {
+    clear:both;
+    visibility:hidden;
+}
+
+label {
+    cursor:pointer;
+}
+
+.pageContent {
+    margin-top: 10px;
+}
+
+.pageContent .pageLibel {
+    margin-bottom: 6px;
+}
+
+.pageContent .btPage,
+.pageContent .btPageOn {
+    display: block;
+    float: left;
+    padding-top: 6px;
+    background: #FFFFFF;
+    border: 1px solid #d46b2a;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 30px;
+    height: 22px;
+    text-align: center;
+}
+
+.pageContent .btPage:hover {
+    background:#EAAE89;
+    color:#FFFFFF;
+}
+
+.pageContent .btPageOn {
+    background: #d46b2a;
+    color:#FFFFFF;
+}
+
+#bodyPageBgLeft {
+    position:absolute;
+    z-index:1;
+    left:0px;
+    top:128px;
+    width:50%;
+    height:825px;
+    background:#e6e6e6 url('../imgs/bg-motif-left.jpg') left top no-repeat;
+}
+
+#bodyPageBgRight {
+    position:absolute;
+    z-index:1;
+    right:0;
+    top:128px;
+    width:50%;
+    height:672px;
+    background:#e6e6e6 url('../imgs/bg-motif-right.jpg') right top no-repeat;
+}
+
+#header {
+    position:absolute;
+    z-index:2;
+    width:100%;
+    height:125px;
+    border-bottom:3px solid #343434;
+    background:#444444 url('../imgs/header-bg.jpg') left top repeat-x;
+}
+
+#headerContent {
+    position:relative;
+    width:1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo { 
+    position:absolute;
+    display:block;
+    width:203px;
+    height:78px;
+    margin-top:8px;
+    background:transparent url('../imgs/logo.png') left top no-repeat;
+}
+
+#login {
+    position:absolute;
+    height:85px;
+    right: 0px;
+    font-size:10px;
+    font-weight:bold;
+    color:#FFFFFF;
+}
+
+#login #login-left {
+    width:58px;
+    height:82px;
+    background:transparent url('../imgs/bg-login-left.png') left top no-repeat;
+}
+
+#login #login-right {
+    width:56px;
+    height:82px;
+    background:transparent url('../imgs/bg-login-right.png') left top no-repeat;
+}
+
+#login #login-register {
+    height:82px;
+    background:transparent url('../imgs/bg-login.png') left top repeat-x;
+}
+
+#login #block-register {
+    padding-right: 10px;
+    border-right: 1px solid #FFFFFF;
+    margin-right: 10px;
+    margin-top: -7px;
+    height:60px;
+}
+
+.fa-facebook {
+    color: #fff;
+    font-size: 12px;
+}
+
+#connect {
+    font-weight: bold;
+    color: #fff;
+    font-size: 8px;
+    text-align: center;
+    font-family: verdana;
+}
+
+#facebook {
+    text-align: center;
+    background: #365195;
+    padding: 4px;
+    width: 60px;
+    /* height: 29px; */
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px #161718;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+#steam {
+    display:block;
+    margin-top: 15px;
+    float: left;
+    text-align: center;
+    background: #000000;
+    padding: 4px;
+    width: 60px;
+    /* height: 29px; */
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 2px #333333;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+#login #bt-register {
+    width:64px;
+    height:64px;
+    background:transparent url('../imgs/bt-register-off.png') left top no-repeat;
+    cursor:pointer;
+}
+
+#login #bt-register:hover {
+    background:transparent url('../imgs/bt-register-on.png') left top no-repeat;
+}
+
+#login #login-content {
+    display:inline-block;
+    height:82px;
+    background:transparent url('../imgs/bg-login.png') left top repeat-x;
+    padding-top: 5px;
+}
+
+#login-content #login_status {
+    margin-left: 35px;
+    margin-bottom: 5px;
+    margin-top: -5px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#login-content #remember {
+    float:left;
+    font-size:10px;
+    font-weight:bold;
+    color:#FFFFFF;
+    margin-top:3px;
+}
+
+#login-content #remember #passwordLost {
+    color:#c2c2c2;
+    text-decoration:none;
+}
+
+#login-content #remember #passwordLost:hover {
+    color:#FFFFFF;
+}
+
+#login-content .inputText {
+    border:0;
+    padding:3px 15px 3px 15px;
+    font-size:10px;
+    font-weight:bold;
+    width:90px;
+    color:#d15023;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#login-content #login-title {
+    font-size: 16px;
+    color:#FFFFFF;
+}
+
+.login-link  {
+    font-size: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bordel;
+    font-family:calibri;
+}
+
+.login-link:hover {
+    /*text-decoration:underline;*/
+    color:#d46b2a;
+}
+
+.login-mail  {
+    color: #fec607;
+    
+}
+
+.login-link:hover {
+    color:#d46b2a;
+}
+
+.login-mail-img {
+    vertical-align:middle;
+    margin-top:-4px;
+    border:0px;
+    width:20px;
+    height:14px;
+}
+
+#login-content #login-myaccount {
+    background: transparent url('../imgs/edit.png') left top no-repeat;
+    background-size: 16px 16px;
+    margin-top:4px;
+    padding-left: 19px;
+    padding-top: 1px;
+    margin-bottom:8px;
+}
+
+#login-content #login-cv {
+    background: transparent url('../imgs/cv.png') left top no-repeat;
+    background-size: 16px 16px;
+    padding-left: 19px;
+    padding-top: 1px;
+    margin-bottom:8px;
+}
+
+#login-content #login-team {
+    background: transparent url('../imgs/team.png') left top no-repeat;
+    background-size: 16px 16px;
+    padding-left: 19px;
+    padding-top: 1px;
+    margin-bottom:8px;
+}
+
+#login-content #login-multigaming {
+    display:block;
+    background: transparent url('../imgs/multigaming.png') left top no-repeat;
+    background-size: 16px 16px;
+    padding-left: 19px;
+    padding-top: 1px;
+    margin-bottom:8px;
+}
+
+#login-content .bt-login {
+    float:right;
+    padding:2px 30px 2px 30px;
+    color:#d15023;
+    font-size:10px;
+    font-weight:bold;
+    border:1px solid #979797;
+    background:transparent url('../imgs/bt-bg.jpg') left top repeat-x;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    cursor:pointer;    
+}
+
+#login-content .bt-logout {
+    background: transparent url('../imgs/bt-logout.png') left 3px no-repeat;
+    background-size: 16px 16px;
+    width: 18px;
+    height: 21px;
+    border: 0px;
+    cursor: pointer;
+    margin-top: -2px;
+}
+
+#nav {
+    position:absolute;
+    width:1100px;
+    height:30px;
+    margin-top:95px;
+    background:transparent url('../imgs/nav-bg.jpg') left top repeat-x;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#nav .nav-sep {
+    float:left;
+    width:2px;
+    height:30px;
+    background:transparent url('../imgs/nav-sep.jpg') left top no-repeat;
+}
+
+#bt-home {
+    float:left;
+    width:24px;
+    height:21px;
+    margin-top:5px;
+    margin-left:15px;
+    margin-right:15px;
+    background:transparent url('../imgs/bt-home.png') left top no-repeat;
+}
+
+#bt-home:hover {
+    background:transparent url('../imgs/bt-home-on.png') left top no-repeat;
+}
+
+#nav .nav-link {
+    float:left;
+    padding:10px 15px 10px 15px;
+    font-family: Distant Galaxy;
+    font-size:12px;
+    color:#FFFFFF;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+#nav .nav-link:hover,
+#nav .nav-link-on {
+    float:left;
+    padding:10px 15px 10px 15px;
+    font-family: Distant Galaxy;
+    font-size:12px;
+    color:#d46b2a;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+#nav #facebook {
+    float:left;
+    display:block;
+    width:22px;
+    height:22px;
+    margin-top:5px;
+    margin-left:12px;
+    margin-right:12px;
+    border:0;
+    background:transparent url('../imgs/facebook.png') left top no-repeat;
+}
+
+#nav #twitter {
+    float:left;
+    display:block;
+    width:22px;
+    height:22px;
+    margin-top:5px;
+    margin-right:25px;
+    border:0;
+    background:transparent url('../imgs/twitter.png') left top no-repeat;
+}
+
+#sousnav {
+    position:absolute;
+    z-index:3;
+    width:1100px;
+    height:3px;
+    margin-top:125px;
+    background:transparent url('../imgs/sous-nav.jpg') center top no-repeat;
+}
+
+#bodyPage {
+    position:absolute;
+    width:100%;
+    margin-top:128px;
+    z-index:2;
+}
+
+#bodyContent {
+    position:relative;
+    background:#FFFFFF;
+    width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:12px;
+    color:#333333;
+    min-height: 725px;
+}
+
+#rightColBlocks {
+    position:relative;
+}
+
+#rightCol {
+    position:relative;
+    width:255px;
+    padding-top:10px;
+}
+
+#rightCol .block {
+    border:1px solid #cfcfcf;
+    width:250px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#rightCol .block .title {
+    color:#FFFFFF;
+    background:#2b2b2b;
+    font-family: Distant Galaxy;
+    padding:5px;
+}
+
+#rightCol .block .content {
+    padding:5px;
+}
+
+.news_feed {
+    text-align: left;
+    padding: 2px;
+    border-bottom: 1px solid #cccccc;
+    margin: 0px -5px 5px -5px;
+    font-size: 10px;
+}
+
+.news_feed a {
+    color:#333333;
+}
+
+.news_feed a:hover {
+    color:#d46b2a;
+}
+
+#content {
+    padding-bottom:150px;
+    min-height: 775px;
+}
+
+#content h1 {
+    font-family:calibri;
+    font-size:30px;
+    margin:5px 10px 5px 10px;
+    color:#333333;
+}
+
+#content h2 {
+    font-family:calibri;
+    font-size:20px;
+    color:#d46b2a;
+    margin:5px 10px 15px 20px;
+    font-weight: normal;
+}
+
+#content h3{
+    font-family:calibri;
+    font-size:20px;
+    color:#333333;
+    margin:5px 10px 15px 20px;
+}
+
+a {
+    color:#d46b2a;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#333333;
+}
+
+a.white {
+    font-size: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bordel;
+    font-family:calibri;
+}
+
+a.white:hover {
+    /*text-decoration:underline;*/
+    color:#d46b2a;
+}
+
+#content .white {
+    padding: 10px 20px 10px 20px;
+    margin-top:5px;
+}
+
+#games_slide {
+    height:65px;
+    width:100%;
+    border-bottom:1px solid #bebebe;
+    background:#f1f1f1;
+}
+
+#games_slide ul {
+
+}
+
+#games_slide ul li {
+    float:left;
+    list-style-type:none;
+}
+
+.TBHeader {
+    background:#262626;
+    color:#FFFFFF;
+    font-weight:bold;
+}
+
+.RowDot {
+    background:#FFFFFF;
+    color:#333333;
+}
+
+.Row1 {
+    color:#333333;
+    background:#FFFFFF url('../imgs/border-dotted-hori.jpg') left bottom repeat-x;
+}
+
+.Row2 {
+    color:#333333;
+    background:#F2F2F2 url('../imgs/border-dotted-hori.jpg') left bottom repeat-x;
+}
+
+.list-libel {
+    font-size:13px;color:#d46b2a;
+}
+
+.RowHL {
+    background:#ffb46c;
+    color:#FFFFFF;
+}
+
+.RowLink:hover {
+    background:#E2E2E2 url('../imgs/border-dotted-hori.jpg') left bottom repeat-x;
+}
+
+.bt-classic {
+    height:28px;
+    background:transparent url('../imgs/bt-classic.jpg') left top repeat-x;
+    color:#333333;
+    font-weight:bold;
+    font-size:12px;
+    font-family:Arial;
+    border:1px solid #888888;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    cursor:pointer;
+}
+
+.bt-classic:hover {
+    background:transparent url('../imgs/bt-classic-on.jpg') left top repeat-x;
+}
+
+.page {
+    margin:10px;
+}
+
+.block-mg {
+    float:left;
+    width:450px;
+    border:1px solid #cccccc;
+    margin-top:20px;
+    margin-left:30px;
+    color:#333333;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.title-resume {
+    width:100%;
+    text-align:center;
+    padding:5px 5px 5px 5px;
+}
+
+.mg-title {
+    font-family:calibri;
+    font-size:20px;
+    font-weight:bold;
+    color:#d46b2a;
+    margin:0px 0px 5px 0px;
+}
+
+.mg-resume {
+    font-size:11px;
+    color:#888888;
+    font-style:italic;
+    margin:0px 0px 5px 0px;
+}
+
+.team-title {
+    font-family:calibri;
+    font-size:18px;
+    font-weight:bold;
+    color:#d46b2a;
+}
+
+.div-game {
+    position:relative;
+    z-index:2;
+    float:left;
+    padding:7px 2px 2px 2px;
+    border:1px solid #d46b2a;
+    margin-right:3px;
+    cursor:pointer;
+    background:#FFFFFF;
+}
+
+.div-game:hover {
+    border:1px solid #888888;
+}
+
+.div-game-off {
+    float:left;
+    padding:7px 2px 2px 2px;
+    border:1px solid #888888;
+    margin-right:3px;
+    cursor:pointer;
+}
+
+.div-game-status-on {
+    position:absolute;
+    width:100%;
+    height:100%;
+    margin-top:-7px;
+    margin-left:-2px;
+    z-index:10;
+    background: transparent;
+}
+
+.div-game-status-off {
+    position:absolute;
+    width:100%;
+    height:100%;
+    margin-top:-7px;
+    margin-left:-2px;
+    z-index:10;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.recruit-game {
+    float:left;
+    border:1px solid #888888;
+    width:200px;
+    padding:10px;
+    margin:10px;
+    -moz-box-shadow: 0px 0px 3px 1px #999999;
+    -webkit-box-shadow: 0px 0px 3px 1px #999999;
+    -o-box-shadow: 0px 0px 3px 1px #999999;
+    box-shadow: 0px 0px 3px 1px #999999;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#999999, Direction=180, Strength=0);
+}
+
+.cl-table {
+    padding:0;
+    margin:0;
+    -moz-box-shadow: 0px 0px 5px 1px #999999;
+    -webkit-box-shadow: 0px 0px 5px 1px #999999;
+    -o-box-shadow: 0px 0px 5px 1px #999999;
+    box-shadow: 0px 0px 5px 1px #999999;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#999999, Direction=180, Strength=0);
+}
+
+.Fgreen {
+    color:#00a900;
+}
+
+.Fred {
+    color:#d62222;
+}
+
+.orange-line {
+    position:absolute;
+    background:#333333 url('../imgs/sous-nav.jpg') center top no-repeat;
+    height:3px;
+    width:100%;
+    bottom:120px;
+}
+
+#footer {
+    position:absolute;
+    bottom:0;
+    background:#333333 url('../imgs/footer.jpg') left top repeat-x;
+    width:100%;
+    height:120px;
+}
+
+#footer .title {
+    font-family: calibri;
+    font-size: 24px;
+    color: #cccccc;
+    text-shadow: 2px 2px #222222;
+    margin-bottom: 5px;
+}
+
+#footer .footer-block {
+    float:left;
+    margin: 5px 50px 0px 80px;
+    color:#888888;
+    text-shadow: 2px 2px #222222;
+}
+
+#footer .footer-block a {
+    color:#888888;
+    text-shadow: 2px 2px #222222;
+}
+
+#footer .footer-block a:hover {
+    color:#FFFFFF;
+}
+
+#footer #block-games #lol {
+    display:inline-block;
+    width:133px;
+    height:50px;
+    background:transparent url('../imgs/lol/footer-off.png') left top no-repeat;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+#footer #block-games #lol:hover {
+    background:transparent url('../imgs/lol/footer-on.png') left -1px no-repeat;
+}
+
+#footer #block-games #csgo {
+    display:inline-block;
+    width:133px;
+    height:50px;
+    background:transparent url('../imgs/csgo/footer-off.png') left top no-repeat;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+#footer #block-games #csgo:hover {
+    background:transparent url('../imgs/csgo/footer-on.png') left top no-repeat;
+}
+
+#footer #block-games #sc2 {
+    display:inline-block;
+    width:137px;
+    height:50px;
+    background:transparent url('../imgs/sc2/footer-off.png') left 5px no-repeat;
+    margin-right:10px;
+}
+
+#footer #block-games #sc2:hover {
+    background:transparent url('../imgs/sc2/footer-on.png') left 5px no-repeat;
+}

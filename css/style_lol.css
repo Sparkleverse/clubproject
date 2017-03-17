@@ -1,0 +1,36 @@
+body {
+    background:#000;
+}
+
+#bodyPageBgLeft {
+    height:750px;
+    background:#000000 url('../imgs/lol_hd1.jpg') left top no-repeat;
+}
+
+#bodyPageBgRight {
+    height:750px;
+    background:#000000 url('../imgs/lol_hd2.jpg') right top no-repeat;
+}
+
+.RowHL:hover {
+    color:#000000;
+}
+
+.RowHL:hover a {
+    color:#000000;
+}
+
+.RowHL .list-libel {
+    color:#FFFFFF;
+}
+
+.RowHL:hover .list-libel {
+    color:#d46b2a;
+}
+
+.star {
+    width: 20px;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 3px;
+}
